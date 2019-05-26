@@ -25,6 +25,6 @@ png(filename="plot4.png")
 ggplot(coal_comb_nei,aes(x = factor(year),y = Emissions)) +
         geom_bar(stat="identity") +
         labs(x="year", y="Total PM2.5 Emissions in Tons") + 
-        labs(title="PM2.5 Coal Combustion Source Emissions Across US from 1999-2008")
+        labs(title="PM2.5 Coal Combustion Emissions Across US from 1999-2008")
 
 dev.off()
