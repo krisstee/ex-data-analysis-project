@@ -25,11 +25,9 @@ totalPM <- baltimore %>%
 # start PNG file
 png(filename = "plot2.png")
 
-rng <- range(totalPM$Emissions)
-
 # plot
 barplot(totalPM$Emissions, names=totalPM$year, xlab="Year",
         ylab="Total PM2.5 Emissions",
-        main="Total PM2.5 Emissions by Year")
+        main="Total PM2.5 Emissions in Baltimore by Year")
 
 dev.off()
