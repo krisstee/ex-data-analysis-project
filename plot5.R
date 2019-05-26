@@ -21,7 +21,7 @@ vehicle_collection <- condition <- grepl("vehicle", SCC[, "SCC.Level.Two"], igno
 # subset baltimore to get vehicle related data
 vehicle_scc <- SCC[vehicle_collection,]
 vehicle_scc_list <- vehicle_scc$SCC
-vehicle_nei <- subset(NEI, SCC %in% vehicle_scc_list)
+vehicle_nei <- subset(baltimore, SCC %in% vehicle_scc_list)
 
 # Start png
 png(filename="plot5.png")
