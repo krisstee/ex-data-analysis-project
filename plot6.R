@@ -49,9 +49,9 @@ png(filename="plot6.png")
 
 # Plot
 ggplot(baltimore_la, aes(x=factor(year), y=Emissions)) +
-  geom_bar(stat="identity") +
-  facet_grid(scales="free", space="free", .~city) +
-  labs(x="Year", y="Total PM2.5 Emissions in Tons") + 
-  labs(title="PM2.5 Motor Vehicle Emissions in Baltimore & LA")
+        geom_bar(stat="identity") +
+        facet_grid(scales="free", space="free", .~city) +
+        labs(x="Year", y="Total PM2.5 Emissions in Tons") + 
+        labs(title="PM2.5 Motor Vehicle Emissions in Baltimore & LA")
 
 dev.off()
