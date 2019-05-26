@@ -1,3 +1,4 @@
+# Author: Kristijana A.
 # Exploratory Data Analysis Week 4 Project
 # Plot 4
 
